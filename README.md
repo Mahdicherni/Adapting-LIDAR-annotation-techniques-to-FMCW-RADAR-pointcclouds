@@ -59,7 +59,8 @@ We annotated the point clouds using object bounding boxes derived from camera im
    - Implemented mixed precision training to optimize performance due to limitations in the available GPU vRAM memory.
 ## 3. Results : 
 
-
+![Example Image](https://github.com/Mahdicherni/Adapting-LIDAR-annotation-techniques-to-FMCW-RADAR-pointcclouds/blob/main/Salsanet_tf2/Confusion%20matrix/BEV%20confusion%20matrix.png)
+![Example Image](https://github.com/Mahdicherni/Adapting-LIDAR-annotation-techniques-to-FMCW-RADAR-pointcclouds/blob/main/Salsanet_tf2/Confusion%20matrix/SFV%20confusion%20matrix.png)
 ## Conclusion
 By improving the data preparation and making these architectural changes, the network is better equipped to handle radar noise and point cloud data, with optimized performance on modern hardware but further work can be done to ameliorate the sparsity problem.
 

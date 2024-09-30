@@ -3,7 +3,11 @@
 ## Overview
 This project involves processing radar point cloud data, annotating it, and enhancing a deep learning network to improve radar-specific robustness. The work is centered around the **View-of-Delft (VoD)** dataset and using the  **SalsaNet** model with some modifications.
 
-The primary goal is to detect 3 classes: **background**, **vehicles**, and **road**.
+For more details about the model and the dataset, please refer to the links below:
+Model's paper link : https://ieeexplore.ieee.org/document/9304694
+dataset link : https://github.com/tudelft-iv/view-of-delft-dataset
+
+The primary goal is to detect 3 classes: **background**, **vehicles**, and **Pedestrians**.
 Note that the vod dataset contains 13 different classes: we filter pointcloud data by eliminating many classes. Trucks,motocycles and cars are regrouped in one class named Vehicule.
 
 ## 1. Environment Setup
@@ -32,7 +36,7 @@ Each image contained the following 4 channels:
 - Maximum Elevation
 - Average Reflectivity
 
-## 2. Pointwise Annotation
+## 2. Pointwise Annotation 
 
 We annotated the point clouds using object bounding boxes derived from camera images. The process involved:
 
@@ -53,6 +57,8 @@ We annotated the point clouds using object bounding boxes derived from camera im
    
 2. **Mixed Precision Training**:
    - Implemented mixed precision training to optimize performance due to limitations in the available GPU vRAM memory.
+## 3. Results : 
+
 
 ## Conclusion
 By improving the data preparation and making these architectural changes, the network is better equipped to handle radar noise and point cloud data, with optimized performance on modern hardware but further work can be done to ameliorate the sparsity problem.

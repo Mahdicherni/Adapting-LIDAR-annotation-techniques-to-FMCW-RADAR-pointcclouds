@@ -47,12 +47,13 @@ We annotated the point clouds using object bounding boxes derived from camera im
 2. **Projecting Point Clouds**:
    - Each point in the point cloud was projected onto the camera image. The label of each point was determined by calculating the minimum distance between the point and the center of the bounding box. In cases where a point was within multiple bounding boxes, the closest bounding box determined the label.
 
-## 3. Enhancements to SalsaNet
+## 3.Training:
 
 ### TensorFlow Version Upgrade:
 - **Upgraded from TensorFlow 1.9 to 2.10** due to incompatibility with Windows 11 and the latest CUDA toolkits.
+- ** We finetune the original model**
    
-2. **Mixed Precision Training**:
+- **Mixed Precision Training**:
    - Implemented mixed precision training to optimize performance due to limitations in the available GPU vRAM memory.
 ## 3. Results : 
 

@@ -35,6 +35,7 @@ Each image contained the following 4 channels:
 - Mean Elevation
 - Maximum Elevation
 - Average Reflectivity
+- Average compensated velocity
 
 ## 2. Pointwise Annotation 
 
@@ -50,10 +51,6 @@ We annotated the point clouds using object bounding boxes derived from camera im
 
 ### TensorFlow Version Upgrade:
 - **Upgraded from TensorFlow 1.9 to 2.10** due to incompatibility with Windows 11 and the latest CUDA toolkits.
-
-### Architecture Modifications:
-1. **Noise Simulation**:
-   - Added a `GaussianNoise` layer to the `resBlock` of the architecture. This simulates noise in radar point clouds, making the network more robust to radar-specific noise.
    
 2. **Mixed Precision Training**:
    - Implemented mixed precision training to optimize performance due to limitations in the available GPU vRAM memory.
@@ -62,6 +59,7 @@ We annotated the point clouds using object bounding boxes derived from camera im
 ![Example Image](https://github.com/Mahdicherni/Adapting-LIDAR-annotation-techniques-to-FMCW-RADAR-pointcclouds/blob/main/Salsanet_tf2/Confusion%20matrix/BEV%20confusion%20matrix.png)
 ![Example Image](https://github.com/Mahdicherni/Adapting-LIDAR-annotation-techniques-to-FMCW-RADAR-pointcclouds/blob/main/Salsanet_tf2/Confusion%20matrix/SFV%20confusion%20matrix.png)
 ## Conclusion
-By improving the data preparation and making these architectural changes, the network is better equipped to handle radar noise and point cloud data, with optimized performance on modern hardware but further work can be done to ameliorate the sparsity problem.
+By improving the data preparation, the network is better equipped to handle radar point cloud data, with optimized performance on modern hardware but further work can be done to ameliorate the sparsity problem.
+
 
 

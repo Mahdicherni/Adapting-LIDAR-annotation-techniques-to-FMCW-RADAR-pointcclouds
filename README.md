@@ -5,6 +5,7 @@ This project involves processing radar point cloud data, annotating it, and enha
 
 For more details about the model and the dataset, please refer to the links below:
 Model's paper link : https://ieeexplore.ieee.org/document/9304694
+Model gitlab link : https://gitlab.com/aksoyeren/salsanet 
 dataset link : https://github.com/tudelft-iv/view-of-delft-dataset
 
 The primary goal is to detect 3 classes: **background**, **vehicles**, and **Pedestrians**.

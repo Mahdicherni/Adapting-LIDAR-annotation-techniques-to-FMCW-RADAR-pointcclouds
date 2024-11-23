@@ -32,10 +32,11 @@ We utilized the **View-of-Delft (VoD)** dataset, specifically working with:
 - **SFV (Spherical Field of View)** images
 
 ### Channels Extracted:
-Each image contained the following 4 channels:
+Each image contained the following 5 channels:
 - Mean Elevation
 - Maximum Elevation
 - Average Reflectivity
+- density
 - Average compensated velocity
 
 ## 2. Pointwise Annotation 

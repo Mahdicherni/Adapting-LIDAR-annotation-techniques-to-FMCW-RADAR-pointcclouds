@@ -33,8 +33,8 @@ We utilized the **View-of-Delft (VoD)** dataset, specifically working with:
 
 ### Channels Extracted:
 Each image contained the following 5 channels:
-- Mean Elevation
-- Maximum Elevation
+- Mean Elevation(BEV)/ Mean depth(SFV)
+- Maximum Elevation(BEV) / Maximum Depth(SFV) 
 - Average Reflectivity
 - density
 - Average compensated velocity
